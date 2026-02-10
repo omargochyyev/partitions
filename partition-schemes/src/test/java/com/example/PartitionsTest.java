@@ -7,6 +7,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
+
+/*PartitionsTest class verifies that the lomuto and hoare partiotions work correctly and no elements get lost or added, testing with sorted, empty, and unsorted array */
+
+
 public class PartitionsTest {
 
     private static final int[] SORTED = {10, 17, 19, 21, 44, 55, 57, 63, 65, 67};

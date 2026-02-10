@@ -1,5 +1,9 @@
 package com.example;
 
+
+/*Partitions class inmplements lomuto and hoarse partition schemes in quicksort */
+
+
 public final class Partitions {
     private Partitions() {}
 
@@ -10,7 +14,8 @@ public final class Partitions {
         a[j] = tmp;              // write back stored value into a[j]
     }
 
-    //Lomuto Partition Scheme
+    //Lomuto Partition Scheme, pivot choice a[high](which is last element in range)
+    //after the partition, all elements <= pivot are moved to left, all elements > pivot are moved to right, pivot is placed in final correct pos.
 
     public static int lomutoPartition(int[] a, int low, int high){
 
@@ -42,6 +47,7 @@ public final class Partitions {
     }
 
     //hoare partition
+    // pivot choice: a[mid] where mid = low + (high - low)/2
 
     public static int hoarePartition(int[] a, int low, int high) {
         if(a == null) throw new IllegalArgumentException("array is null");
